@@ -1,0 +1,85 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background:url(../../assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.space {
+    flex-basis: 50%;
+}
+.explore {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    align-self: end;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    
+}
+.explore::before {
+    position: absolute;
+    content:"";
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 50%;
+    z-index: -1;
+    transition: linear 0.3s;
+}
+.explore:hover::before {
+    width: 330px;
+    height: 330px;
+}
+.explore span {
+    font-family: 'Bellefair', serif;
+}
+.ex {
+    flex-basis: 50%;
+}
+.space h4 {
+    font-size:23px;
+    color:white;
+    letter-spacing: 3px;
+    margin-bottom:20px;
+}
+.space h2 {
+    font-size:160px;
+    color:white;
+    font-family: 'Bellefair', serif;
+}
+.space p {
+    color:#ffff;
+    width: 85%;
+    line-height: 1.7;
+}
+
+@media (max-width:992px) {
+    .home .landing .container {
+        flex-direction: column;
+    }
+    .explore {
+        margin-top:70px;
+    }
+    .space p {
+        margin-top:20px;
+    }
+    .space {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:768px) {
+    .space h2 {
+        font-size: 100px;
+    }
+}

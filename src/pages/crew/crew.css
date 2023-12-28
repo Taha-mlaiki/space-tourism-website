@@ -1,0 +1,88 @@
+.crew {
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(../../assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+}
+
+.crew-content {
+    color:white;
+    display: flex;
+}
+.crew-content h3 {
+    font-size:2em;
+    margin-bottom:4rem
+}
+.crew-content h3 span {
+    margin-right:10px;
+    font-weight: 600;
+    color:rgba(255, 255, 255, 0.486);
+}
+.crew-content .rol {
+    font-size:2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.486);
+    font-family: 'Bellefair', serif;
+}
+.crew-content .name {
+    font-size:3rem;
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    margin-bottom:20px;
+}
+.crew-content > div {
+    flex-basis: 50%;
+}
+.crew-content > div img {
+    align-self: end;
+    max-width: 320px;
+    margin-inline:auto;
+    margin-top:10px
+}
+.crew-content .choose span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.274);
+    display: block;
+    margin-inline: 10px;
+    cursor: pointer;
+}
+.picture {
+    display: flex;
+}
+
+.picture img {
+    align-self: end;
+}
+.crew-content .bio {
+    margin-bottom:90px;
+    line-height: 1.9;
+}
+.crew-content .choose span.active {
+    background-color: white;
+}
+@media (max-width:768px) {
+    .crew-content{
+        font-size:13px;
+    }
+    .crew-content h3 {
+        margin-top:30px;
+        font-size:2em;
+    }
+    .crew-content .rol {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom:10px;
+    }
+    .crew-content .name {
+        text-align: center;
+        font-size: 3em;
+    }
+    .crew-content .bio {
+        text-align: center;
+    }
+}
